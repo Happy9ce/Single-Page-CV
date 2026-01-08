@@ -1,0 +1,91 @@
+html {
+    scroll-behavior: smooth;
+}
+body {
+    max-width: 1000px;
+  margin: 0 auto;
+  padding: 40px 24px;
+  position: relative;
+
+}
+    /*display:flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 5px;
+    margin: 50px;
+    position: relative;
+
+*/
+.welcomesection{
+    background-image: url(images/green\ bg.jpg);
+    margin-top: 1px;
+    padding-top: 10px;
+}
+
+section {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 40px 24px;
+  position: relative;
+}
+
+iframe{
+    margin-top: 10px;
+    margin-bottom: 10px;
+    border-radius: 10px;
+    
+}
+footer {
+    background-color: teal;
+    color: white;
+    text-align: center;
+    width: 100%;
+    padding: 3px;
+}
+.welcomesection, .ourservices, #signupForm {
+    background-color:  teal;
+    color: white;
+
+}
+
+.ourmission, #aboutus {
+    background-color: rgb(230, 254, 218);
+    color: black;
+}
+
+table, th, td {
+    border: 2px solid teal;
+    border-collapse: collapse;
+    padding: 10px;
+    text-align: center;
+    position: relative;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    width: 500px;
+    margin: 40px;
+    padding: 10px;
+    width: 100%;
+
+}
+
+a {
+    text-decoration: underline;
+    color: yellow;
+    margin: 10px;
+    padding: 10px;
+    background-color: teal;
+    border-radius: 5px;
+
+}
+button {
+    background-color: yellow;
+    color: teal;
+    border: none;
+    padding: 10px 20px;
+    margin: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+}

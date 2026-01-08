@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">    
+<head>
+    <meta charset="UTF-8">      
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Milestone Project</title>
+     <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header>
+    <img src="images/HappyWav removebg.png" alt="HappyWav Digital Logo" width="198" height="65">
+</header> <hr>
+<main>
+    <section class="welcomesection">
+    <h1>Welcome to HappyWav Digital</h1>
+    <h3>Where strategy meets creativity and brands grow online.</h3>
+    <p>At HappyWav Digital, we help brands ride the digital wave with confidence.</p>
+    <p>We combine data-driven strategy, compelling storytelling, and creative execution to build strong online presences that convert attention into loyal customers.</p>
+    <nav>
+        <a href="tel:+1234567890" class="call-btn">Call us</a>
+        <a href="#signupForm">Sign Up</a>
+        <a href="#aboutus">About Us</a>
+    </nav> <hr>
+    </section> 
+    <section class="ourmission">
+        <div class="videoText">
+            <h2>Your Growth Is Our Mission</h2>
+            <p>At HappyWav Digital, we don’t believe in random posting or guesswork. </p>
+            <p>We create intentional strategies backed by insights, creativity, and data
+         to help brands stand out in crowded digital spaces. </p>
+        </div>
+      <video controls loop muted width="560" height="315" poster="images/DM pic.jpg">
+         <source src="https://res.cloudinary.com/dgn3mlotu/video/upload/v1767557417/What_Does_A_Digital_Marketing_Agency_Do__swvn0g.mp4" type="video/mp4">
+      </video>
+    </section> 
+    <section class="ourservices">
+        <div class="imageText">
+            <h2>Our Services</h2>
+            <p>HappyWav Digital is a full-service digital marketing agency dedicated to helping brands thrive in the online world.</p>
+            <p>Our team of experts specializes in social media <br> management, content creation, SEO, digital advertising and lots more. We work closely with our clients to understand their unique needs<br> and develop customized strategies that drive results.</p>
+        </div>
+        <figure>
+            <img src="images/Digital marketing.png" alt="HappyWav Digital team collaborating on digital marketing strategies" width="560" height="315">
+            <figcaption>Different services offered at HappyWav Digital</figcaption>
+        </figure><hr>
+    </section>
+    <section class="PerformanceTable">
+        <h3>Digital Marketing Channels Performance</h3>
+     <table>
+        <caption>Sample Industry Data</caption>
+        <thead>
+            <tr>
+                <th colspan="2">Channel Name</th>
+                <th>Avg Monthly <br>Reach(k)</th>
+                <th>Engagement <br>Rate (%)</th>
+                <th>Avg Cost <br>Per Click ($)</th>
+                <th>Conversion<br> Rate (%)</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td colspan="6">Social Media Marketing</td>
+            </tr>
+            <tr>
+                <td>Organic Platforms</td>
+                <td>Instagram</td>
+                <td>120</td>
+                <td>4.8</td>
+                <td>0.90</td>
+                <td>2.5</td>
+            </tr> 
+             <tr>
+                <td rowspan="3">Social Media Marketing</td>
+                <td>Facebook</td>
+                <td>150</td>
+                <td>3.2</td>
+                <td>0.75</td>
+                <td>2.1</td>
+            </tr>
+            <tr>
+                <td>Twitter</td>
+                <td>80</td>
+                <td>2.9</td>
+                <td>0.60</td>
+                <td>1.8</td>
+            </tr>
+            <tr>
+                <td>LinkedIn</td>
+                <td>60</td>
+                <td>5.1</td>
+                <td>1.20</td>
+                <td>3.4</td>
+            </tr>
+            <tr>
+                <td colspan="6">Paid Advertising</td>
+            </tr>
+            <tr>
+                <td rowspan="2">Paid Advertising</td>
+                <td>Google Ads</td>
+                <td>200</td>
+                <td>3.9</td>
+                <td>1.50</td>
+                <td>4.2</td>
+            </tr>
+            <tr>
+                <td>Meta Ads</td>
+                <td>180</td>
+                <td>4.3</td>
+                <td>1.10</td>
+                <td>3.8</td>
+            </tr>
+            <tr>
+                <td rowspan="4">Content Marketing</td>
+                <td>Website SEO</td>
+                <td>95</td>   
+                <td>6.2</td>  
+                <td>0.40</td>
+                <td>5.0</td>
+            </tr>
+            <tr>
+                <td>Email Marketing</td>
+                <td>130</td>
+                <td>7.5</td>
+                <td>0.70</td>
+                <td>6.3</td>
+            </tr>
+            <tr>
+                <td>Blog Posts</td>
+                <td>160</td>
+                <td>8.1</td>
+                <td>0.90</td>
+                <td>7.2</td>
+            </tr>
+            <tr>
+                <td>Video Content</td>
+                <td>220</td>
+                <td>9.4</td>
+                <td>1.30</td>
+                <td>8.5</td>
+            </tr>
+        </tbody>
+    </table><hr>
+</section>
+<section id="signupForm">
+    <h3>Sign Up Here</h3>
+    <h4>Fill this form so we can reach you</h4>
+    <form action="submit_form.php" method="post">
+        <label for="fname">Fullname:</label>
+        <input type="text" id="fname" name="fname" placeholder="Happy Paul" maxlength="20" required><br>
+        <label for="email">Email:</label><br>
+        <input type="email" id="email" name="email" placeholder="happy@gmail.com" required><br>
+        <label for="city">City:</label>
+        <select id="city" name="city" required>
+            <option value="lagos">Lagos</option>
+            <option value="abuja">Abuja</option>
+            <option value="portharcourt">Port Harcourt</option>
+            <option value="kano">Kano</option>
+            <option value="ibadan">Ibadan</option>
+            <option value="enugu">Enugu</option>
+            <option value="calabar">Calabar</option>
+            <option value="onitsha">Onitsha</option>
+            <option value="kogi">Kogi</option>
+            <option value="jos">Jos</option>
+        </select><br>
+        <label for="numbers">Phone Number:</label>
+        <input type="tel" id="numbers" name="numbers" placeholder="Please enter a valid phone number" pattern="[0-9]{11}" required><br>
+        <label for="message">Message:</label>
+        <textarea id="message" name="message" rows="4" cols="50" maxlength="100"required></textarea><br>
+        <p>How should we contact you?</p>
+        <input type="radio" id="contactphone" name="contactmethod" value="phone" required>
+        <label for="contactphone">Phone</label>
+        <input type="radio" id="contactemail" name="contactmethod" value="email" required>
+        <label for="contactemail">Email</label>
+        <input type="radio" id="contacttext" name="contactmethod" value="text" required>
+        <label for="contacttext">Both</label><br>
+        <p>How did you hear about us?</p>
+        <input type="checkbox" id="friend"  name="referred[]" value="friend">
+        <label for="friend">Friend</label>
+        <input type="checkbox" id="tsacademy"  name="referred[]"  value="tsacademy">
+        <label for="tsacademy">TS Academy</label>
+        <input type="checkbox" id="others"  name="referred[]" value="others">
+        <label for="others">Others</label><br>
+        <input type="submit" value="Submit">
+    </form><hr>
+</section>
+<section id="aboutus">
+    <h3>About HappyWav Digital</h3>
+    <ul>
+           <li><a href="#">How it works</a></li>
+           <li><a href="#">Featured</a></li>
+          <li><a href="#">Partnership</a></li>
+           <li><a href="#">Business Relation</a></li>
+    </ul>
+</section>
+</main>
+<footer>
+    <p>&copy; 2026 HappyWav Digital. All rights reserved</p>
+
+    <div class="footer-right">
+        <a href="#">Privacy Policy</a>
+        <a href="#">Terms & Conditions</a>
+    </div>
+</footer>
+</body>
+</html>

@@ -1,0 +1,375 @@
+/* =========================
+   GLOBAL STYLES
+========================= */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Segoe UI", Arial, sans-serif;
+    line-height: 1.6;
+    color: #1f2933;
+    background-color: #f9fafb;
+}
+
+/* Brand Colors */
+:root {
+    --teal-primary: #0f766e;
+    --teal-soft: #5eead4;
+    --yellow-accent: #facc15;
+    --gray-light: #e5e7eb;
+    --gray-dark: #374151;
+    --white: #ffffff;
+}
+
+/* =========================
+   HEADER
+========================= */
+
+header {
+    background-color: var(--white);
+    padding: 20px 40px;
+    border-bottom: 1px solid var(--gray-light);
+}
+
+header img {
+    display: block;
+}
+
+/* =========================
+   WELCOME SECTION
+========================= */
+
+.welcomesection {
+    padding: 10px 40px;
+    background: linear-gradient(
+        to right,
+        #ecfeff,
+        #f0fdfa
+    );
+}
+
+.welcomesection h1 {
+    font-size: 2.5rem;
+    color: var(--teal-primary);
+    margin-bottom: 10px;
+}
+
+.welcomesection h3 {
+    font-weight: 400;
+    color: var(--gray-dark);
+    margin-bottom: 20px;
+}
+
+.welcomesection p {
+    max-width: 700px;
+    margin-bottom: 12px;
+}
+
+/* Navigation */
+nav {
+    margin-top: 25px;
+}
+
+nav a {
+    text-decoration: none;
+    color: var(--teal-primary);
+    font-weight: 600;
+    margin-right: 20px;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+/* Call Us Button */
+
+.call-btn {
+    display: inline-block;
+    padding: 10px 18px;
+    background-color: var(--teal-primary);
+    color: var(--white);
+    border-radius: 999px; /* soft pill shape */
+    font-weight: 600;
+    font-size: 0.95rem;
+    text-decoration: none;
+    margin-right: 20px;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+/* Hover effect – subtle, not loud */
+.call-btn:hover {
+    background-color: #115e59;
+    transform: translateY(-1px);
+}
+
+/* Optional: soft highlight using sunshine yellow */
+.call-btn:focus {
+    outline: 2px solid var(--yellow-accent);
+    outline-offset: 3px;
+}
+
+hr {
+    border: none;
+    height: 1px;
+    background: linear-gradient(
+        to right,
+        transparent,
+        rgba(15, 118, 110, 0.4),
+        transparent
+    );
+    margin: 20px auto;
+    width: 80%;
+}
+
+/* =========================
+   MISSION SECTION
+========================= */
+
+.ourmission {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 40px;
+    padding: 60px 40px;
+    background-color: var(--white);
+}
+
+.videoText {
+    flex: 1;
+    min-width: 280px;
+}
+
+.videoText h2 {
+    color: var(--teal-primary);
+    margin-bottom: 15px;
+}
+
+video {
+    border-radius: 10px;
+    border: 1px solid var(--gray-light);
+}
+
+/* =========================
+   SERVICES SECTION
+========================= */
+
+.ourservices {
+    padding: 60px 40px;
+    background-color: #f0fdfa;
+}
+
+.imageText h2 {
+    color: var(--teal-primary);
+    margin-bottom: 15px;
+}
+
+.imageText p {
+    max-width: 800px;
+    margin-bottom: 12px;
+}
+
+figure {
+    margin-top: 30px;
+}
+
+figure img {
+    border-radius: 12px;
+    border: 1px solid var(--gray-light);
+}
+
+figcaption {
+    font-size: 0.9rem;
+    color: #6b7280;
+    margin-top: 8px;
+}
+
+/* =========================
+   TABLE SECTION
+========================= */
+
+.PerformanceTable {
+    padding: 60px 40px;
+    background-color: var(--white);
+}
+
+.PerformanceTable h3 {
+    color: var(--teal-primary);
+    margin-bottom: 20px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    background-color: var(--white);
+}
+
+caption {
+    caption-side: bottom;
+    padding-top: 10px;
+    font-size: 0.85rem;
+    color: #6b7280;
+}
+
+th {
+    background-color: var(--teal-primary);
+    color: var(--white);
+    padding: 12px;
+    font-size: 0.9rem;
+}
+
+td {
+    padding: 10px;
+    text-align: center;
+}
+
+tbody tr:nth-child(even) {
+    background-color: #f9fafb;
+}
+
+/* Section headers inside table */
+td[colspan] {
+    background-color: #f0fdfa;
+    font-weight: bold;
+    color: var(--teal-primary);
+}
+
+/* =========================
+   SIGN-UP FORM
+========================= */
+
+#signupForm {
+    padding: 60px 40px;
+    background-color: #ecfeff;
+}
+
+#signupForm h3 {
+    color: var(--teal-primary);
+    margin-bottom: 10px;
+}
+
+form {
+    max-width: 600px;
+    background-color: var(--white);
+    padding: 30px;
+    border-radius: 12px;
+    border: 1px solid var(--gray-light);
+}
+
+label {
+    display: block;
+    margin-top: 15px;
+    font-weight: 600;
+}
+
+input,
+select,
+textarea {
+    width: 100%;
+    padding: 10px;
+    margin-top: 6px;
+    border-radius: 6px;
+    border: 1px solid var(--gray-light);
+    font-family: inherit;
+}
+
+input[type="radio"],
+input[type="checkbox"] {
+    width: auto;
+    margin-right: 6px;
+}
+
+input[type="submit"] {
+    margin-top: 25px;
+    background-color: var(--teal-primary);
+    color: var(--white);
+    border: none;
+    padding: 12px 20px;
+    border-radius: 8px;
+    font-size: 1rem;
+    cursor: pointer;
+}
+
+input[type="submit"]:hover {
+    background-color: #115e59;
+}
+
+/* =========================
+   ABOUT US
+========================= */
+
+#aboutus {
+    padding: 50px 40px;
+    background-color: var(--white);
+}
+
+#aboutus ul {
+    list-style: none;
+}
+
+#aboutus li {
+    margin-bottom: 10px;
+}
+
+#aboutus a {
+    color: var(--teal-primary);
+    text-decoration: none;
+}
+
+#aboutus a:hover {
+    text-decoration: underline;
+}
+
+/* =========================
+   FOOTER
+========================= */
+
+footer {
+    background-color: #022c22;
+    color: #d1fae5;
+    padding: 20px 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 0.9rem;
+}
+
+footer .footer-right {
+    display: flex;
+    gap: 20px;
+}
+
+footer a {
+    color: #d1fae5;
+    text-decoration: none;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+
+
+/* =========================
+   RESPONSIVE
+========================= */
+
+@media (max-width: 768px) {
+    .ourmission {
+        flex-direction: column;
+    }
+
+    table {
+        font-size: 0.85rem;
+    }
+}
+
+@media (max-width: 600px) {
+    footer {
+        flex-direction: column;
+        gap: 10px;
+        text-align: center;
+    }
+}
+/* End of style.css */
